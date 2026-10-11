@@ -1,0 +1,170 @@
+{
+  "project": "Look Again",
+  "verified_on": "2026-10-11",
+  "timezone": "Asia/Shanghai",
+  "research_scope": "Official model cards, file inventories, library documentation, and upstream license files; source inspection of the current browser prototype. This research did not download weights or run inference.",
+  "selected_model": {
+    "id": "Xenova/siglip-base-patch16-224",
+    "model_card": "https://huggingface.co/Xenova/siglip-base-patch16-224",
+    "upstream_id": "google/siglip-base-patch16-224",
+    "upstream_model_card": "https://huggingface.co/google/siglip-base-patch16-224",
+    "upstream_license": "Apache-2.0",
+    "license_evidence": "Google's model page explicitly identifies License: apache-2.0. The Xenova card explicitly identifies that model as the source of its Transformers.js-compatible ONNX weights; the conversion card does not separately state another license.",
+    "license_text": "https://www.apache.org/licenses/LICENSE-2.0",
+    "conversion_publisher": "Xenova",
+    "dtype": "q8",
+    "task": "zero-shot-image-classification",
+    "weights_are_publicly_downloadable": true,
+    "model_revision_pinned_by_app": false,
+    "weight_size": {
+      "approximate_combined_file_mb_decimal": 211,
+      "combined_file": "model_quantized.onnx",
+      "combined_file_page": "https://huggingface.co/Xenova/siglip-base-patch16-224/blob/main/onnx/model_quantized.onnx",
+      "alternative_split_files_mb_decimal": {
+        "text_model_quantized.onnx": 111,
+        "vision_model_quantized.onnx": 99.5
+      },
+      "inventory_source": "https://huggingface.co/Xenova/siglip-base-patch16-224/tree/main/onnx",
+      "qualification": "Rounded file-list values, not measured transfer totals or peak memory. Model weights exclude tokenizer/configuration files, JavaScript, WASM, and other runtime assets. Combined and split files are alternative layouts, not additive requirements."
+    }
+  },
+  "browser_stack": {
+    "library": "@huggingface/transformers",
+    "version": "3.8.1",
+    "import_url": "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1",
+    "library_license": "Apache-2.0",
+    "library_license_source": "https://github.com/huggingface/transformers.js/blob/3.8.1/LICENSE",
+    "backend": "ONNX Runtime WASM",
+    "backend_license": "MIT",
+    "backend_license_source": "https://github.com/microsoft/onnxruntime/blob/main/LICENSE",
+    "execution": "Dedicated module worker; single WASM thread; serialized inference requests.",
+    "input": "User File or demo image passed as a Blob to the worker and then to the pipeline.",
+    "pipeline_options": {
+      "device": "wasm",
+      "dtype": "q8"
+    },
+    "classification_options": {
+      "hypothesis_template": "a photo of {}"
+    },
+    "official_sources": [
+      {
+        "url": "https://huggingface.co/docs/transformers.js/v3.8.1/en/installation",
+        "supports": "Vanilla JavaScript without a bundler; documented CDN import pinned to 3.8.1."
+      },
+      {
+        "url": "https://huggingface.co/docs/transformers.js/v3.8.1/en/index",
+        "supports": "Browser inference through ONNX Runtime; WASM CPU backend and q8 support."
+      },
+      {
+        "url": "https://huggingface.co/docs/transformers.js/v3.8.1/en/api/pipelines",
+        "supports": "Zero-shot image classification ranks supplied candidate labels; accepted image inputs include Blob."
+      },
+      {
+        "url": "https://huggingface.co/Xenova/siglip-base-patch16-224",
+        "supports": "Specific Transformers.js zero-shot image-classification example and a photo of {} hypothesis template."
+      },
+      {
+        "url": "https://huggingface.co/docs/transformers.js/v3.8.1/en/api/env",
+        "supports": "Browser cache configuration and local/remote model-loading controls."
+      }
+    ]
+  },
+  "product_behavior": {
+    "candidate_theme_count": 8,
+    "candidate_labels": [
+      "green leaves and plants",
+      "rough tree bark",
+      "clouds and open sky",
+      "water and reflections",
+      "flowers in bloom",
+      "stone pebbles and soil",
+      "a path or an outdoor street",
+      "birds or small animals"
+    ],
+    "output": "Highest-ranked theme selects a prewritten observation card; the interface shows the top three matches and offers manual correction.",
+    "free_text_generation": false,
+    "species_identification": false,
+    "notes": {
+      "storage": "localStorage",
+      "maximum_records": 12,
+      "fields": [
+        "text",
+        "theme",
+        "date"
+      ],
+      "photos_saved_by_app": false
+    },
+    "ai_assisted_development": true,
+    "card_copy": "Prewritten in app.js; not model-generated at inference time. No claim that the copy was exclusively human-written."
+  },
+  "cost_and_network": {
+    "paid_inference_service_required": false,
+    "api_key_required": false,
+    "photo_upload_endpoint": false,
+    "initial_network_required": true,
+    "initial_download": "Approximately 211 MB of q8 model weights plus runtime and configuration assets.",
+    "download_hosts": [
+      "huggingface.co",
+      "Hugging Face public artifact CDNs",
+      "cdn.jsdelivr.net"
+    ],
+    "qualification": "No paid API is used by the architecture. Network access, download time, available storage, and device compute are still required; this is not a guarantee about hosting terms or a user's connectivity costs."
+  },
+  "offline_and_device_limits": {
+    "model_cache_requested": true,
+    "service_worker_scope": "Allowed public runtime/model dependencies only. The page shell, same-origin scripts/photos, credentials, user photos, and cards are not cached by this service worker.",
+    "offline_reload_validated": false,
+    "offline_reload_claimed_supported": false,
+    "mobile_validated": false,
+    "cache_persistence_guaranteed": false,
+    "qualification": "Browser cache support is not evidence that an entire page can be reloaded offline. Actual behavior is subject to cache eviction, quota, browser features, and the hosting environment."
+  },
+  "reported_validation": {
+    "date": "2026-10-11",
+    "source": "Implementation agent's observed desktop localhost browser run; not a hosted deployment. Further functional checks are recorded in validation.json.",
+    "image": "dist/assets/demo-leaf.jpg, a public-source leaf photograph that also contains water",
+    "top_three_display_themes": [
+      "Water & reflections",
+      "Leaves & light",
+      "Stone & tiny details"
+    ],
+    "displayed_local_inference_seconds": 2.2,
+    "timing_excludes": [
+      "model download",
+      "model initialization"
+    ],
+    "qualification": "One observed run, not an accuracy estimate, comparative benchmark, mobile test, offline test, outdoor field trial, or user study. Additional validation is to be recorded separately when performed."
+  },
+  "demo_photo_provenance": {
+    "detail_file": "dist/assets/credits.json",
+    "license": "CC0-1.0",
+    "license_source": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "photos": [
+      {
+        "file": "dist/assets/demo-leaf.jpg",
+        "author": "E.Prabha",
+        "source": "https://commons.wikimedia.org/wiki/File:Leaf_c.jpg"
+      },
+      {
+        "file": "dist/assets/demo-bark.jpg",
+        "author": "Juliane Collins (Sparkveela)",
+        "source": "https://commons.wikimedia.org/wiki/File:Tree_Bark.jpg"
+      }
+    ],
+    "creator_field_photos": false,
+    "ai_generated_photos": false
+  },
+  "publication_status": {
+    "repository_published": false,
+    "public_competition_demo_published": true,
+    "public_demo_url": "https://look-again-field-notes.mighty-lime-2940.chatgpt.site/",
+    "current_preview": "Public hosted desktop model run verified on October 11, 2026; see validation.json for scope."
+  },
+  "alternative_reviewed_not_selected": {
+    "id": "Xenova/clip-vit-base-patch32",
+    "q8_split_weights_mb_decimal": 153.6,
+    "model_card": "https://huggingface.co/Xenova/clip-vit-base-patch32",
+    "original_repository_license": "https://github.com/openai/CLIP/blob/main/LICENSE",
+    "selection_reason": "CLIP's upstream repository is MIT, but the reviewed upstream and conversion model cards did not explicitly state a separate weight license. SigLIP was selected because the upstream model card explicitly declares Apache-2.0. This records the research evidence boundary, not a claim that CLIP weights are prohibited."
+  }
+}

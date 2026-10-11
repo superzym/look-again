@@ -1,0 +1,3 @@
+demo-leaf.jpg: Leaf c.jpg by E.Prabha, CC0 1.0. Source: https://commons.wikimedia.org/wiki/File:Leaf_c.jpg
+demo-bark.jpg: Tree Bark.jpg by Juliane Collins (Sparkveela), CC0 1.0. Source: https://commons.wikimedia.org/wiki/File:Tree_Bark.jpg
+Both are uncropped Wikimedia 960px thumbnails of real photographs. Public-source demo images, not photos taken by the user; original URLs and license evidence are in credits.json.

@@ -1,0 +1,78 @@
+{
+  "project": "Look Again",
+  "purpose": "Public-source demo photographs, not evidence of the user taking an outdoor walk.",
+  "verified_on": "2026-10-11",
+  "demo_disclosure": "Sample photos from Wikimedia Commons, shared under CC0. These were not taken by you; use your own outdoor photo for a personal observation.",
+  "assets": [
+    {
+      "file": "demo-leaf.jpg",
+      "title": "Leaf c.jpg",
+      "description": "Real photograph of small green plants in a wet planter; use as a leaf-observation demonstration. Species is not identified.",
+      "author": "E.Prabha",
+      "author_url": "https://commons.wikimedia.org/wiki/User:E.Prabha",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Leaf_c.jpg",
+      "source_page_revision": "https://commons.wikimedia.org/w/index.php?title=File:Leaf_c.jpg&oldid=1135326907",
+      "original_file_download_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Leaf_c.jpg",
+      "downloaded_thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Leaf_c.jpg/960px-Leaf_c.jpg",
+      "original_dimensions": [
+        3024,
+        4032
+      ],
+      "source_photo_date": "2025-03-27",
+      "license_evidence": "The original Commons file page identifies E.Prabha as author, Own work as source, and an explicit CC0 1.0 dedication in the Licensing section.",
+      "dimensions": [
+        960,
+        1280
+      ],
+      "exif_tag_ids": [],
+      "license": "CC0 1.0 Universal",
+      "license_identifier": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "mime_type": "image/jpeg",
+      "cropped": false,
+      "transformations": [
+        "Wikimedia-generated 960px-wide thumbnail; no local image edits."
+      ],
+      "sha256": "c0ab9cc3d0640c617021b070375619ea7d55602509acbc14e9a6fe90937f47bc",
+      "bytes": 400934,
+      "visual_review": "No visible people, street addresses, or sensitive personal material.",
+      "user_collected": false,
+      "ai_generated": false
+    },
+    {
+      "file": "demo-bark.jpg",
+      "title": "Tree Bark.jpg",
+      "description": "Real close-up photograph of tree bark; the tree species is not identified.",
+      "author": "Juliane Collins (Sparkveela)",
+      "author_url": "https://commons.wikimedia.org/wiki/User:Sparkveela",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tree_Bark.jpg",
+      "source_page_revision": "https://commons.wikimedia.org/w/index.php?title=File:Tree_Bark.jpg&oldid=1273000974",
+      "original_file_download_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Tree_Bark.jpg",
+      "downloaded_thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Tree_Bark.jpg/960px-Tree_Bark.jpg",
+      "original_dimensions": [
+        4000,
+        3000
+      ],
+      "source_photo_date": "2011-05-18",
+      "license_evidence": "The original Commons file page identifies Juliane Collins as author, Own work as source, and an explicit CC0 1.0 dedication in the Licensing section.",
+      "dimensions": [
+        960,
+        720
+      ],
+      "exif_tag_ids": [],
+      "license": "CC0 1.0 Universal",
+      "license_identifier": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "mime_type": "image/jpeg",
+      "cropped": false,
+      "transformations": [
+        "Wikimedia-generated 960px-wide thumbnail; no local image edits."
+      ],
+      "sha256": "0229b37c8296c2f3344e3fd03ac5164d10f0ee7f445f7fd81fb4003cabe52e1c",
+      "bytes": 264989,
+      "visual_review": "No visible people, street addresses, or sensitive personal material.",
+      "user_collected": false,
+      "ai_generated": false
+    }
+  ]
+}

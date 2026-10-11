@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-11",
+  "environment": "Desktop Codex in-app browser at localhost, with a separate public-hosted check recorded below",
+  "model": "Xenova/siglip-base-patch16-224",
+  "backend": "WASM q8, one thread",
+  "inference_observations": [
+    {
+      "input": "CC0 leaf demo",
+      "ranked_themes": [
+        "Water & reflections",
+        "Leaves & light",
+        "Stone & tiny details"
+      ],
+      "displayed_seconds": 2.2
+    },
+    {
+      "input": "CC0 bark demo",
+      "ranked_themes": [
+        "Bark & texture",
+        "Stone & tiny details",
+        "Leaves & light"
+      ],
+      "displayed_seconds": 2.1
+    },
+    {
+      "input": "CC0 bark demo, later run",
+      "ranked_themes": [
+        "Bark & texture",
+        "Stone & tiny details",
+        "Leaves & light"
+      ],
+      "displayed_seconds": 2.2
+    }
+  ],
+  "timing_caveat": "Individual observations exclude model download and initialization; not a benchmark or mobile-performance measurement.",
+  "functional_checks_passed": [
+    "Selected local image file via chooser and obtained model-selected card",
+    "Analyzed both credited demo images with real model",
+    "Manual selection cancels running inference and preserves manual attribution",
+    "Inference restarted after cancellation",
+    "Opened and returned from pocket-screen modal",
+    "Saved a clearly labelled UI-test note and confirmed persistence after reload, then cleared it",
+    "Downloaded manual card and verified manual attribution in text",
+    "New photo clears stale card",
+    "No console errors in final tested page"
+  ],
+  "responsive_check": {
+    "desktop_viewport_override": {
+      "width": 390,
+      "height": 844
+    },
+    "document_client_width": 375,
+    "document_scroll_width": 375,
+    "issue_fixed": "Photo frame minimum height and aspect ratio caused horizontal overflow; explicit 100% width fixed it",
+    "physical_phone_tested": false
+  },
+  "static_review": {
+    "photo_race_guard": true,
+    "manual_result_guard": true,
+    "service_worker_same_origin_bypass": true,
+    "original_project_license": "MIT",
+    "third_party_notice_file": "THIRD_PARTY_NOTICES.md"
+  },
+  "unverified": [
+    "Physical phone memory and latency",
+    "Full offline reload",
+    "Outdoor field trial or user study",
+    "Public source repository",
+    "Competition submission"
+  ],
+  "prize_received": false,
+  "new_cash_spending": 0,
+  "public_hosted_check": {
+    "date": "2026-10-11",
+    "url": "https://look-again-field-notes.mighty-lime-2940.chatgpt.site/",
+    "accessible_without_sign_in": true,
+    "input": "CC0 bark demo",
+    "ranked_themes": [
+      "Bark & texture",
+      "Stone & tiny details",
+      "Leaves & light"
+    ],
+    "displayed_inference_seconds": 2.3,
+    "timing_excludes": [
+      "model download",
+      "model initialization"
+    ],
+    "app_console_errors_observed": false,
+    "scope": "One desktop browser inference run; no physical phone or offline test."
+  }
+}
