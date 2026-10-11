@@ -17,6 +17,7 @@ const allowed = new Set([
   'dist/assets/credits.json', 'dist/assets/CREDITS.txt',
   'dist/assets/demo-leaf.jpg', 'dist/assets/demo-bark.jpg',
   '.github/workflows/check.yml', 'scripts/check-public-source.mjs',
+  'docs/demo.png',
 ]);
 const allowedDirectories = new Set();
 for (const file of allowed) {
