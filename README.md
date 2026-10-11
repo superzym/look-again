@@ -4,7 +4,7 @@ One photo. A small invitation to notice more.
 
 Look Again uses an open-weight image–text model to choose an observation card from a photograph. A picture of leaves might prompt you to follow a vein with your eyes; a reflection might prompt you to compare the reflected world with the real one. The next action is to look away from the screen.
 
-This is a working browser prototype for the **Touch Grass** theme. Try the [public demo](https://look-again-field-notes.mighty-lime-2940.chatgpt.site/). As of October 11, 2026, a public source repository and competition entry have not yet been published.
+This is a working browser prototype for the **Touch Grass** theme. Try the [public demo](https://look-again-field-notes.mighty-lime-2940.chatgpt.site/). The source is available in this public repository under the MIT License.
 
 ## Run locally
 
@@ -74,7 +74,7 @@ Physical mobile devices, disconnected page reloads, and outdoor use have **not**
 
 Run `node scripts/check-public-source.mjs` from this public source copy. It uses only Node's standard library to check JavaScript syntax without executing imports, local HTML resource paths, the two sample photographs' credited byte counts and SHA-256 hashes, license notices, and an explicit public-file allowlist. The allowlist rejects unexpected files such as private hosting metadata; it is not a content or secrets scanner.
 
-The clean export passed locally on **Node 24.19.0**. Separate test copies correctly rejected a fake `.openai` directory, a changed photo hash, a changed photo byte count, and an HTML path outside `dist`. The GitHub Actions workflow uses **Node 22** on a standard Ubuntu runner; its remote run is **awaiting verification**. These are packaging and integrity checks, not browser-behavior or model-accuracy tests. They do not download or run the model.
+The clean export passed locally on **Node 24.19.0**. Separate test copies correctly rejected a fake `.openai` directory, a changed photo hash, a changed photo byte count, and an HTML path outside `dist`. The GitHub Actions workflow uses **Node 22** on a standard Ubuntu runner; its [first public run](https://github.com/superzym/look-again/actions/runs/38138451431) passed on October 11, 2026 (11 seconds total). These are packaging and integrity checks, not browser-behavior or model-accuracy tests. They do not download or run the model.
 
 ## Source layout
 
